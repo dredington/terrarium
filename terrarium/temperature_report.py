@@ -3,5 +3,4 @@
 class TemperatureReport:
 
   def hello(self):
-    print("Hello?")
     return True
