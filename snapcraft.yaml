@@ -11,7 +11,7 @@ confinement: devmode # use 'strict' once you have the right plugs and slots
 
 apps:
   terrarium:
-    command: detect
+    command: test
 
 parts:
   setup:
