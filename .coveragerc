@@ -1,0 +1,8 @@
+# For configuration options see:
+#   https://coverage.readthedocs.io/en/coverage-4.5.1a/config.html
+
+[html]
+directory = coverage
+
+[run]
+source = terrarium
