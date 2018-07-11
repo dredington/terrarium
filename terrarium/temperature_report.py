@@ -3,15 +3,13 @@ from weather import Weather, Unit
 
 class TemperatureReport:
 
-  def hello(self):
-    return True
+  def __init__(self):
+    self.weather = Weather(unit=Unit.FAHRENHEIT)
+    self.lookup = self.weather.lookup_by_location(80031)
+    self.condition = self.lookup.condition
 
-  def get_weather(self):
-    weather = Weather(unit=Unit.FAHRENHEIT)
-    lookup = weather.lookup_by_location(80031)
-    condition = lookup.condition
+  def temperature(self):
+    return int(self.condition.temp)
 
-    condition.text
-    condition.temp
-
-    return lookup
+  def humidity(self):
+    return int(self.lookup.atmosphere['humidity'])
