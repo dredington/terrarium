@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from weather import Weather, Unit
 
+
 class TemperatureReport:
 
   def __init__(self):
