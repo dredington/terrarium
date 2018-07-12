@@ -11,12 +11,14 @@ confinement: devmode # use 'strict' once you have the right plugs and slots
 
 apps:
   terrarium:
-    command: test
+    command: bin/test
 
 parts:
   terrarium:
-    # See 'snapcraft plugins'
     plugin: python
     python-version: python3
+    requirements: requirements.txt
     source: .
+    # source: https://github.com/dredington/terrarium.git
+    # source-branch: master
   
