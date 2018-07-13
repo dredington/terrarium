@@ -7,5 +7,6 @@ setup(
    author='dredington',
    author_email='',
    packages=['terrarium'],
-   install_requires=[]
+   install_requires=['weather-api'],
+   scripts=['bin/test']
 )

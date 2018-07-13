@@ -6,11 +6,17 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'terrarium')))
 
 import terrarium
+from terrarium import TemperatureReport
 
 def main():
   """run the application"""
 
   print('I\'m inside main')
+
+  report = TemperatureReport()
+  temperature = report.temperature()
+
+  print(f'The temperature outside is: {temperature}')
 
   input("Press enter to exit ;)")
   input()
