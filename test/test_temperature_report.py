@@ -1,5 +1,5 @@
 from context import terrarium
-from terrarium import TemperatureReport
+from terrarium.temperature_report import TemperatureReport
 
 from weather.objects.weather_obj import *
 

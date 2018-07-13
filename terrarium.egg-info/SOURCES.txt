@@ -1,6 +1,6 @@
 README.md
 setup.py
-bin/test
+bin/launch
 terrarium/__init__.py
 terrarium/temperature_report.py
 terrarium.egg-info/PKG-INFO

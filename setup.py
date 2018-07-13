@@ -1,5 +1,7 @@
 from setuptools import setup
 
+install_requires = ['weather-api', 'coverage==4.4.2']
+
 setup(
    name='terrarium',
    version='0.0.1',
@@ -7,6 +9,6 @@ setup(
    author='dredington',
    author_email='',
    packages=['terrarium'],
-   install_requires=['weather-api'],
-   scripts=['bin/test']
+   install_requires=install_requires,
+   scripts=['bin/launch']
 )
