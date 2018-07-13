@@ -107,3 +107,4 @@ venv.bak/
 /.editorconfig
 /coverage
 /stage
+/terrarium_source.tar.bz2
