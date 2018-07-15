@@ -1,6 +1,10 @@
 from setuptools import setup
 
-install_requires = ['weather-api', 'coverage==4.4.2']
+install_requires = [
+  'weather-api', 
+  'coverage==4.4.2',
+  'gpiozero'
+  ]
 
 setup(
    name='terrarium',

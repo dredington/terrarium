@@ -1,21 +1,22 @@
+#!/usr/bin/env python3
+
 from context import terrarium
-from terrarium.temperature_report import TemperatureReport
+from terrarium.data_sources.yahoo_weather import YahooWeather
 
 from weather.objects.weather_obj import *
 
 import unittest
 
-
-class TestTemperatureReport(unittest.TestCase):
+class TestYahooWeather(unittest.TestCase):
 
   def setUp(self):
-      self.report = TemperatureReport()
+      self.report = YahooWeather()
 
-  def test_temperature(self):
+  def testTemperature(self):
     """Is temperature an integer?"""
     self.assertTrue(type(self.report.temperature()) is int)
 
-  def test_humidity(self):
+  def testHumidity(self):
     """Is humidity an integer and a valid percentage?"""
     humidity = self.report.humidity()
     self.assertTrue(type(humidity) is int)

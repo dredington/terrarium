@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 from weather import Weather, Unit
 
-
-class TemperatureReport:
+class YahooWeather:
 
   def __init__(self):
     self.weather = Weather(unit=Unit.FAHRENHEIT)
